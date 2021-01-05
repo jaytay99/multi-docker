@@ -1,0 +1,17 @@
+{
+    "AWSEBDockerrunVersion": 2,
+    "containerDefinitions": [
+        {
+            name: "client",
+            image: "festivuss/multi-client",
+            hostname: "client",
+            essential: false
+        },
+        {
+            name: "server",
+            image: "festivuss/multi-server",
+            hostname: "api",
+            essential: false
+        }
+    ]
+}
